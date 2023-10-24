@@ -1,0 +1,11 @@
+version: '3.1'
+services:
+  postgres-builder:
+    container_name: postgres-xpto-api
+    image: postgres:12.2
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: xpto
+    ports:
+      - "5432:5432"
